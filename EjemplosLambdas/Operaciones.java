@@ -49,6 +49,15 @@ public class Operaciones{
 	System.out.printf("Resta: %f\n", opera(d1, d2, resta));
 	System.out.printf("Multiplicación: %f\n", opera(d1, d2, multiplicacion));
 	System.out.printf("División: %f\n", opera(d1, d2, division));
+
+	/* CON CLASES INTERNAS ANÓNIMAS */
+	System.out.printf("Suma: %f\n", opera(d1,d2, new Funcion(){
+		@Override
+		public double f(double n1, double n2){
+		    return n1 + n2;
+		}
+	    }));
+
     }
 
     
